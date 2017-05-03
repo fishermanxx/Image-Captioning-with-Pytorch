@@ -32,19 +32,32 @@ just as the figure shows: <br />
 ![imshow](./result/3.PNG) <br />
 
 3. **Use the long short-term memory(LSTM) model as the RNN to realize the generation part.**
+* Input: batch of encode captions of shape `(N, L, C)`
+* Initial hidden layer: extracted features of shape `(N, D)`
+* Output : `(N, L, C)` <br />
+`C:dictionary size`
 
-
-
-
-
-
-
-
+just as the figure shows: <br />
+![imshow](./result/4.PNG) <br />
 
 
 ****
 ## **Example result**
 
+the Experiment metrics is as follows: <br />
+![imshow](./result/5.PNG) <br />
+
+Several generation captions: <br />
+![imshow](./result/6.PNG) <br />
+
 
 ****
 ## **Reference**
+* [MSCOCO][ref1]
+* [Show and tell: Lessons learned from the 2015 mscoco image captioning challenge][ref2]
+* [MyPPT][ref3]
+
+------------------------------------------
+[ref1]:http://mscoco.org/dataset/#overview "MSCOCO"
+[ref2]:http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7505636 "model"
+[ref3]:https://docs.google.com/presentation/d/1cYkTBen1Z0ERzCMLfpPoTIYQvvURGcFbG1xMT-7ZNtg/edit?usp=sharing "PPT"
